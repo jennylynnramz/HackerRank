@@ -51,3 +51,21 @@ SELECT CITY, STATE FROM STATION;
 SELECT DISTINCT CITY 
 FROM STATION 
 WHERE mod(ID,2) = 0;
+
+
+'Weather Observation Station 4'
+'https://www.hackerrank.com/challenges/weather-observation-station-4/problem'
+SELECT COUNT(CITY) - COUNT(DISTINCT(CITY))
+FROM STATION;
+
+'Weather Observation Station 5'
+'https://www.hackerrank.com/challenges/weather-observation-station-5/problem'
+SELECT CITY, LENGTH(CITY)
+FROM STATION
+ORDER BY LENGTH(CITY), CITY
+LIMIT 1;
+
+SELECT CITY, LENGTH(CITY)
+FROM STATION
+ORDER BY LENGTH(CITY) DESC, CITY DESC
+LIMIT 1;
