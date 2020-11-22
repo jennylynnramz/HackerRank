@@ -80,3 +80,15 @@ OR  CITY LIKE 'E%'
 OR  CITY LIKE 'I%' 
 OR  CITY LIKE 'O%' 
 OR  CITY LIKE 'U%';
+
+
+'Weather Observation Station 7'
+'https://www.hackerrank.com/challenges/weather-observation-station-7/problem'
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE CITY LIKE '%a' 
+OR  CITY LIKE '%e' 
+OR  CITY LIKE '_%i' 
+OR  CITY LIKE '_%o' 
+OR  CITY LIKE '_%u';
+"Capitalization is super important"
