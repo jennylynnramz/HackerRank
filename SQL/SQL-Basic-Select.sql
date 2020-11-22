@@ -131,3 +131,52 @@ AND  CITY NOT LIKE '%e'
 AND  CITY NOT LIKE '%i' 
 AND  CITY NOT LIKE '%o' 
 AND  CITY NOT LIKE '%u';
+
+
+'Weather Observation Station 11'
+'https://www.hackerrank.com/challenges/weather-observation-station-11/problem'
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE (CITY NOT LIKE '%a' 
+AND CITY NOT LIKE '%e' 
+AND CITY NOT LIKE '%i' 
+AND CITY NOT LIKE '%o' 
+AND CITY NOT LIKE '%u')
+OR (CITY NOT LIKE 'A%' 
+AND CITY NOT LIKE 'E%' 
+AND CITY NOT LIKE 'I%' 
+AND CITY NOT LIKE 'O%' 
+AND CITY NOT LIKE 'U%');
+
+
+'Weather Observation Station 12'
+'https://www.hackerrank.com/challenges/weather-observation-station-12/problem'
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE (CITY NOT LIKE '%a' 
+AND CITY NOT LIKE '%e' 
+AND CITY NOT LIKE '%i' 
+AND CITY NOT LIKE '%o' 
+AND CITY NOT LIKE '%u')
+AND (CITY NOT LIKE 'A%' 
+AND CITY NOT LIKE 'E%' 
+AND CITY NOT LIKE 'I%' 
+AND CITY NOT LIKE 'O%' 
+AND CITY NOT LIKE 'U%');
+
+
+'Higher Than 75 Marks'
+'https://www.hackerrank.com/challenges/more-than-75-marks/problem'
+SELECT NAME
+FROM STUDENTS
+WHERE MARKS > 75
+ORDER BY SUBSTR(name, -3, 3), ID ASC;
+
+
+'Employee Names'
+'https://www.hackerrank.com/challenges/name-of-employees/problem'
+SELECT name
+FROM employee
+ORDER BY name ASC
+
+
