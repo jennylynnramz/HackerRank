@@ -88,7 +88,46 @@ SELECT DISTINCT(CITY)
 FROM STATION
 WHERE CITY LIKE '%a' 
 OR  CITY LIKE '%e' 
-OR  CITY LIKE '_%i' 
-OR  CITY LIKE '_%o' 
-OR  CITY LIKE '_%u';
+OR  CITY LIKE '%i' 
+OR  CITY LIKE '%o' 
+OR  CITY LIKE '%u';
 "Capitalization is super important"
+
+
+'Weather Observation Station 8'
+'https://www.hackerrank.com/challenges/weather-observation-station-8/problem'
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE (CITY LIKE '%a' 
+OR  CITY LIKE '%e' 
+OR  CITY LIKE '%i' 
+OR  CITY LIKE '%o' 
+OR  CITY LIKE '%u')
+AND (CITY LIKE 'A%' 
+OR  CITY LIKE 'E%' 
+OR  CITY LIKE 'I%' 
+OR  CITY LIKE 'O%' 
+OR  CITY LIKE 'U%');
+'Paranthesis are important'
+
+
+'Weather Observation Station 9'
+'https://www.hackerrank.com/challenges/weather-observation-station-9/problem'
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE CITY NOT LIKE 'A%'
+AND CITY NOT LIKE 'E%'
+AND CITY NOT LIKE 'I%'
+AND CITY NOT LIKE 'O%'
+AND CITY NOT LIKE 'U%';
+
+
+'Weather Observation Station 10'
+'https://www.hackerrank.com/challenges/weather-observation-station-10/problem'
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE CITY NOT LIKE '%a' 
+AND  CITY NOT LIKE '%e' 
+AND  CITY NOT LIKE '%i' 
+AND  CITY NOT LIKE '%o' 
+AND  CITY NOT LIKE '%u';
