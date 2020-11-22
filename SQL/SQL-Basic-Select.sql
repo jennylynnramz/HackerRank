@@ -58,14 +58,25 @@ WHERE mod(ID,2) = 0;
 SELECT COUNT(CITY) - COUNT(DISTINCT(CITY))
 FROM STATION;
 
+
 'Weather Observation Station 5'
 'https://www.hackerrank.com/challenges/weather-observation-station-5/problem'
 SELECT CITY, LENGTH(CITY)
 FROM STATION
 ORDER BY LENGTH(CITY), CITY
 LIMIT 1;
-
 SELECT CITY, LENGTH(CITY)
 FROM STATION
 ORDER BY LENGTH(CITY) DESC, CITY DESC
 LIMIT 1;
+
+
+'Weather Observation Station 6'
+'https://www.hackerrank.com/challenges/weather-observation-station-6/problem'
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE CITY LIKE 'A%' 
+OR  CITY LIKE 'E%' 
+OR  CITY LIKE 'I%' 
+OR  CITY LIKE 'O%' 
+OR  CITY LIKE 'U%';
