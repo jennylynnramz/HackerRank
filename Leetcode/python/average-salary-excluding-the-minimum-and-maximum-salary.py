@@ -1,5 +1,4 @@
-# https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/submissions/
-
+# https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
 def average(salary):
     print(salary)
     salary.sort()

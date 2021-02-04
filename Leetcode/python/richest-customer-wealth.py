@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/richest-customer-wealth/submissions/
+# https://leetcode.com/problems/richest-customer-wealth/
 
 def maximumWealth(accounts):
     print(accounts)
